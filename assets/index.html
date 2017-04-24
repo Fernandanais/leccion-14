@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulario</title>
+</head>
+<body align="center">
+
+<h1>Formulario de Datos </h1>
+<form>
+	<p><label for ="name">Nombre</label></br>
+		<input type="text" name="name" pattern="[A-Za-z]{,2}" title="Ingrese un nombre válido" required></br>
+	</p>
+
+	<p><label for ="lname">Apellido</label></br>
+		<input type="text" name="lname" pattern="[A-Za-z]{,2}" title="Ingrese un apellido válido" required></br>
+	</p>
+
+	<p><label for ="tel"> Teléfono</label></br>
+		<input type="tel" name="tel" pattern="[0-9]{8,9}" title="Ingrese un numero válido" required></br>
+	</p>
+
+	<p><label for ="op">Escoge tu cámara para continuar</label></br>
+
+		</br><select name="opcion" id="op" required="required">
+			<option value=""> Seleccione su marca de cámara</option>
+			<option value=""> Canon</option>
+			<option value=""> Nikon</option>
+			<option value=""> Sony</option>
+		</select><br>
+	</p>
+
+	<p><label for ="em">E-mail</label></br>
+		<input type="email" name="em" pattern="[A-Za-z]{,2}" title="Ingrese un correo válido" required></br>
+	</p>
+
+	<p><label for ="pw">Crea tu contraseña</label></br>
+		<input type="password" name="pw" pattern=".{6,}" title="6 o más caracteres" required>
+	</p>
+	<p>
+		<input type="submit" name="" value="send">
+	</p>
+
+
+</form>
+
+
+</body>
+</html>
